@@ -1,0 +1,7 @@
+customer_id,name,city,total_orders
+101,Maria Santos,Manila,5
+102,Juan Dela Cruz,Cebu,invalid
+103,Ana Reyes,Davao,12
+104,Carlos Garcia,Manila,0
+105,Beatriz Gomez,Quezon City,
+106,Ramon Bautista,Cebu,8
