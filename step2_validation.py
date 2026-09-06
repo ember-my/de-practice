@@ -16,16 +16,15 @@ for row in orders:
         print(f"Order {order_id} ({customer}): missing item count")
         continue
 
-    #3. Defensive conversion
+    # 2. Defensive conversion & boundary check
     try:
-        clean_amount = int(orders_items)
+        item_count = int(items_raw)
 
-        if clean_amount <= 0:
-            print(f"Skipping {row.get('customer')}: invalid negative or zero value ({clean_amount})")
+        if item_count <= 0:
+            print(f"Order {order_id} ({customer}): items must be greater than 0 ({item_count})")
             continue
 
-        print(f"Valid: {row.get('customer')}: got {clean_amount: .2f}")
+        print(f"VALID: Order {order_id} for {customer}: {item_count} items confirmed")
 
     except ValueError:
-        print(f"Skipping {row.get('customer')}: could not convert '{orders_items}' to a number")
-
+        print(f"Order {order_id} ({customer}): invalid item format ('{items_raw}')")
