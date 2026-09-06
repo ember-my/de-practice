@@ -2,8 +2,8 @@ events = [
     {"platform": "iOS", "event": "click"},
     {"platform": "Android", "event": "view"},
     {"platform": "iOS", "event": "click"},
-    {"platform": None, "event": "scroll"},       # Missing platform
-    {"platform": "Android", "event": None},        # Missing event
+    {"platform": None, "event": "scroll"},       
+    {"platform": "Android", "event": None},        
     {"platform": "Android", "event": "purchase"},
     {"platform": "iOS", "event": "click"},
     {"platform": "Web", "event": "view"},
