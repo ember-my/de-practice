@@ -36,7 +36,8 @@ for pay in payments:
     # 5 Count aggregation
     if user not in user_totals:
         user_totals[user] = amount_num
-    else:user_totals[user] += amount_num
+    else:
+        user_totals[user] += amount_num
 
 # 6. Print User Total Summary
 print(f"\n User Total Summary:")
